@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { TextInput, FlatList, Text, View, StyleSheet, ActivityIndicator } from 'react-native';
-import { API_URL } from '@env';
+import { URL } from '@env';
 
 const App = () => {
     const [searchTerm, setSearchTerm] = useState('');
+    const API_URL=URL
     const [moviesData, setMoviesData] = useState([]);
     const [filteredData, setFilteredData] = useState([]);
     const [loading, setLoading] = useState(true);
